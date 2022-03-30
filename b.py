@@ -1,5 +1,3 @@
-from array import array
-
 
 print(1)
 
@@ -37,6 +35,9 @@ for x in list2:
 
 
 
+
+
+
 dict2 = {
     "a": 1,
     "b": 2,
@@ -48,4 +49,5 @@ for (k,v) in dict2.items():
     print(k,v)
 for v in dict2.values():
     print(v)
-print ( {"d":4} | dict2)
+dict3  = {"d":4} | dict2
+print (dict3)

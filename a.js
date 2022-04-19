@@ -1,5 +1,5 @@
 console.log(1)
-https://ischurov.github.io/pythonvjs/show/lists-arrays/en/
+//https://ischurov.github.io/pythonvjs/show/lists-arrays/en/
 
 const o1 = {}
 console.log(o1)

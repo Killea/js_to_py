@@ -54,3 +54,28 @@ Object.values(obj2).forEach(v => {
 })
 const obj3 = Object.assign({}, {d: 4}, obj2)
 console.log(obj3)
+
+
+// deep copy
+const obj4 = JSON.parse(JSON.stringify(obj2))
+// or cloneDeep from lodash
+
+
+
+
+
+
+
+// dynamic object attributes
+const e = true
+const f = {
+          c: 'c',
+          ...( e && {f: 'f'}),
+          }
+
+// dynamic array elements
+const a = true
+const b = [1,
+           2,
+           ...(a ? [3] : []),
+           ]

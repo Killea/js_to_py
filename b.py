@@ -51,3 +51,22 @@ for v in dict2.values():
     print(v)
 dict3  = {"d":4} | dict2
 print (dict3)
+
+
+
+# deep copy
+import copy
+x = {}
+y = copy.deepcopy(x)
+
+
+
+
+
+
+
+
+
+# python version? does it support the simlar syntax?
+
+

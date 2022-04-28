@@ -6,12 +6,15 @@ print(d1)
 
 
 
+# list1 = [[1,2], [3,4]]
+# def flatten(l):
+#     return [item for sublist in l for item in sublist]
+# print(flatten(list1))
+
 list1 = [[1,2], [3,4]]
-def flatten(l):
-    return [item for sublist in l for item in sublist]
-print(flatten(list1))
-
-
+list3 = []
+[list3.extend(item) for item in list1]
+print(list3)
 
 list2 = [1, 2, 3]
 map1 = [ x*2 for x in list2]
@@ -27,7 +30,8 @@ print(filter1)
 
 
 
-# [print(x) for x in list2]
+# [print(x) for x in list2] 
+# enumerate(list2) to have the index/value
 for x in list2:
     print(x)
 
@@ -69,4 +73,13 @@ y = copy.deepcopy(x)
 
 # python version? does it support the simlar syntax?
 
+cond = True
 
+dict9 = { 
+    "a": "b",
+    "c":  cond if "d" else "e",
+}
+
+d1 = { "a": "a"}
+cond2 = False
+d4 = d1 | ({ "b": "b"} if cond2 else {})

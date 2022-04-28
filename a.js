@@ -30,8 +30,8 @@ console.log(filter1)
 
 
 
-array2.forEach(i => {
-    console.log(i)
+array2.forEach( (i,index) => {
+    console.log(i, index)
 })
 
 
